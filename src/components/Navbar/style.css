@@ -1,0 +1,38 @@
+.navbar {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+  background: hsl(0 0% 100% / 0.1);
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #c09573;
+  /* text-transform: uppercase; */
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    position: fixed;
+    inset: 0 0 0 60%;
+    flex-direction: column;
+  }
+  .navbar .menu {
+    flex-direction: column;
+  }
+}
